@@ -23,7 +23,7 @@ export const Hero = () => {
   return (
     <HeroWrapper>
       <StyledGreeting>hello!</StyledGreeting>
-      <StyledTitle>I'm Natalia, a coding newbie with big dreams and small syntax errors. I'm here to turn 'I have no idea what I'm doing' into 'I got this!'</StyledTitle>
+      <StyledTitle>I&apos;m Natalia, a coding newbie with big dreams and small syntax errors. I&apos;m here to turn &apos;I have no idea what I&apos;m doing&apos; into &apos;I got this!&apos;</StyledTitle>
       <HeroFooter>
         <IconsContainer>
           {linksProrps.map((el) => (
