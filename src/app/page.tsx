@@ -3,10 +3,10 @@ import './page.module.css';
 import { useTheme, ThemeProvider } from '@mui/material/styles';
 import { createContext, useContext } from 'react';
 import { muiTheme, darkTheme } from '../theme/muiTheme';
-import { Header } from '@/pages/layout/header/Header';
-import { Footer } from '@/pages/layout/footer/Footer';
-import { Main } from '@/pages/layout/main/Main';
-import { PageWrapper } from './page.styled';
+import { HeaderComponent } from '@/pages/layout/header/HeaderComponent';
+import { FooterComponent } from '@/pages/layout/footer/FooterComponent';
+import { MainComponent } from '@/pages/layout/main/MainComponent';
+// import { PageWrapper } from './pageStyled';
 
 const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <>
       <ThemeProvider theme={theme.palette.mode === 'dark' ? darkTheme : muiTheme}>
-        <PageWrapper>
-          <Header />
-          <Main />
-          <Footer />
-        </PageWrapper >
+        <div className='pageWrapper'>
+          <HeaderComponent />
+          <MainComponent />
+          <FooterComponent />
+        </div >
       </ThemeProvider >
     </>
   )

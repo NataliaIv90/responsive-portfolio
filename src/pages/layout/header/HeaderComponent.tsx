@@ -1,12 +1,12 @@
-import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Box, Button, ClickAwayListener, Grow, MenuItem, MenuList, Paper, Popper } from '@mui/material';
+import { Button, ClickAwayListener, Grow, MenuItem, MenuList, Popper } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import { myPages } from '../../../shared/constants';
-import { StyledLink, StyledAppBar, StyledPaper } from './Header.styled'
+import { StyledLink, StyledAppBar, StyledPaper } from './HeaderStyled'
+import Link from 'next/link';
 
-export const Header = () => {
+export const HeaderComponent = () => {
   const [open, setOpen] = useState(false);
   const anchorRef = useRef<HTMLButtonElement>(null);
 
@@ -86,9 +86,7 @@ export const Header = () => {
                       placement === 'bottom-start' ? 'left top' : 'left bottom',
                   }}
                 >
-                  <StyledPaper
-                  // sx={{ marginTop: '14px' }}
-                  >
+                  <StyledPaper>
                     <ClickAwayListener onClickAway={handleClose}>
                       <MenuList
                         autoFocusItem={open}
@@ -97,7 +95,9 @@ export const Header = () => {
                         onKeyDown={handleListKeyDown}
                       >
                         {myPages.map((page) => (
-                          <MenuItem key={page.key} onClick={handleClose}>{page.text}</MenuItem>
+                          <MenuItem key={page.id} onClick={handleClose}>
+                            <Link href={`#${page.id}`}>{page.text}</Link>
+                          </MenuItem>
                         ))}
                       </MenuList>
                     </ClickAwayListener>

@@ -1,6 +1,6 @@
 import { PropsWithChildren, ReactElement } from 'react';
 import { Contacts } from './conacts/Contacts';
-import { MainWrapper, StyledText, StyledTitle, SectionContainer } from './Main.styled';
+import { MainWrapper, StyledText, StyledTitle, SectionContainer } from './MainStyled';
 import { About } from './about/About';
 import { Interests } from './interests/Interests';
 import { Projects } from './projects/Projects';
@@ -25,7 +25,7 @@ export const SectionWrapper = ({
   )
 }
 
-export const Main = () => {
+export const MainComponent = () => {
   return (
     <MainWrapper>
       <Hero />

@@ -5,12 +5,12 @@ import {
   HeroFooter,
   IconsContainer,
   ButtonsContainer,
-  StyledButton,
+  StyledHeroButton,
   StyledLinkDark,
   StyledLinkLight,
   StyledIcon,
   StyledContainedButton
-} from './Hero.styled';
+} from './HeroStyled';
 import { faGithub, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const linksProrps = [
@@ -33,9 +33,9 @@ export const Hero = () => {
           ))}
         </IconsContainer>
         <ButtonsContainer>
-          <StyledButton variant='outlined'>
+          <StyledHeroButton variant='outlined'>
             <StyledLinkLight href='/'>view projects</StyledLinkLight>
-          </StyledButton>
+          </StyledHeroButton>
           <StyledContainedButton variant='contained'>
             <StyledLinkDark href='/'>get in touch</StyledLinkDark>
           </StyledContainedButton>

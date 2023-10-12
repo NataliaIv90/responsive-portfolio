@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconsContainer, StyledLink } from './Contacts.styled';
-import { SectionWrapper } from '../Main';
+import { IconsContainer, StyledLink } from './ContactsStyled';
+import { SectionWrapper } from '../MainComponent';
 
 const linksProrps = [
   { key: 'git', icon: faGithub, path: '' },

@@ -7,7 +7,6 @@ export const IconsContainer = styled('div')({
 });
 
 export const StyledLink = styled('a')(({ theme }) => ({
-  // fontSize: '16px',
   margin: '20px 0',
   color: theme.palette.text.primary,
   transition: 'color 0.15s ease-in',

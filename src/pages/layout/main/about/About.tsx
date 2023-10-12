@@ -1,18 +1,18 @@
-import { SectionWrapper } from '../Main';
+import { SectionWrapper } from '../MainComponent';
 import photo from './photo.jpg';
-import { StyledImage } from './About.styled';
+import { StyledImage } from './AboutStyled';
 
 export const About = () => {
   return (
     <SectionWrapper
-      id='interests'
+      id='about'
       text='Hello! I&rsquo;m Natalia Ivantsova, a self-taught frontend developer with a passion for creating intuitive and user-friendly web experiences.'
       title='about me'
     >
       <div>
         <StyledImage
           src={photo}
-          alt="Picture of the author"
+          alt='Picture of the author'
         />
         <p>My journey into the world of web development started with a thirst for knowledge and a laptop. I didn't have a formal education in this field, but I was determined to learn, and I believe that passion is the most important ingredient in success.</p>
         <p>I honed my skills by devouring YouTube tutorials, scouring through resources like developer.mozilla.org, React, TypeScript and Redux documentation... This self-guided approach allowed me to grasp the intricacies of frontend development at my own pace.</p>

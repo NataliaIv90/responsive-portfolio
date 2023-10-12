@@ -1,6 +1,15 @@
-import { SectionWrapper } from '../Main';
+import { SectionWrapper } from '../MainComponent';
 import { Grid } from '@mui/material';
-import { GridItem } from './Interests.styled';
+import { GridItem } from './InterestsStyled';
+
+const interests = [
+  { key: '1', name: 'Drawing & Painting' },
+  { key: '2', name: 'Photography' },
+  { key: '3', name: 'Hiking' },
+  { key: '4', name: 'Travelling' },
+  { key: '5', name: 'Reading' },
+  { key: '6', name: 'Cooking' },
+];
 
 export const Interests = () => {
   return (
@@ -10,25 +19,12 @@ export const Interests = () => {
       title='interests'
     >
       <Grid container spacing={2} my={2}>
-        <Grid item xs={6}>
-          <GridItem><span>Drawing & Painting</span></GridItem>
-        </Grid>
-        <Grid item xs={6}>
-          <GridItem><span>Photography</span></GridItem>
-        </Grid>
-        <Grid item xs={6}>
-          <GridItem><span>Hiking</span></GridItem>
-        </Grid>
-        <Grid item xs={6}>
-          <GridItem><span>Travelling</span></GridItem>
-        </Grid>
-        <Grid item xs={6}>
-          <GridItem><span>Reading</span></GridItem>
-        </Grid>
-        <Grid item xs={6}>
-          <GridItem><span>Cooking</span></GridItem>
-        </Grid>
+        {interests.map((el) => (
+          <Grid item xs={6} key={el.key}>
+            <GridItem><span>{el.name}</span></GridItem>
+          </Grid>
+        ))}
       </Grid>
     </SectionWrapper>
   )
-}
+};

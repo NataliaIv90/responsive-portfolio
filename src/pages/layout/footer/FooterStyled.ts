@@ -1,6 +1,4 @@
-import { useTheme } from '@emotion/react';
 import { styled } from '@mui/material';
-import { muiTheme, darkTheme } from '../../../theme/muiTheme';
 import { grey } from '@mui/material/colors';
 
 export const StyledDiv = styled('div')({

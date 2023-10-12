@@ -43,14 +43,20 @@ export const ButtonsContainer = styled('div')({
   flexDirection: 'column',
   gap: '10px',
 });
-export const StyledButton = styled(Button)({
+export const StyledHeroButton = styled(Button)({
   borderRadius: '74px',
   padding: '10px 12px',
   border: `1px solid ${grey[100]}`,
+  '&:hover': {
+    borderColor: grey[100]
+  }
 });
 
-export const StyledContainedButton = styled(StyledButton)(({ theme }) => ({
-  background: grey[100]
+export const StyledContainedButton = styled(StyledHeroButton)(({ theme }) => ({
+  background: grey[100],
+  '&:hover': {
+    background: grey[200],
+  }
 }));
 
 export const StyledLinkDark = styled(Link)({

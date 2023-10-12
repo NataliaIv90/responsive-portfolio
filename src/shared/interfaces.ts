@@ -1,4 +1,4 @@
 export interface IMyPagesItem {
-  key: string,
+  id: string,
   text: string,
 };
