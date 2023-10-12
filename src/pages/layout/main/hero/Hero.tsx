@@ -19,7 +19,7 @@ const linksProrps = [
   { key: 'gmail', icon: faGoogle, path: '' },
 ]
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <HeroWrapper>
       <StyledGreeting>hello!</StyledGreeting>
@@ -43,4 +43,6 @@ export const Hero = () => {
       </HeroFooter>
     </HeroWrapper>
   )
-}
+};
+
+export default Hero;

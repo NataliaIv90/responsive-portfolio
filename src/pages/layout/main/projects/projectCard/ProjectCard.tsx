@@ -7,7 +7,7 @@ interface IProjectCard {
   data: IProjectCardProps;
 }
 
-export const ProjectCard = ({ data: { imageSrc, imageAlt, field, text, title, usedTechnologies, buttonLink } }: IProjectCard) => {
+const ProjectCard = ({ data: { imageSrc, imageAlt, field, text, title, usedTechnologies, buttonLink } }: IProjectCard) => {
 
   return (
     <CardContainer>
@@ -31,3 +31,5 @@ export const ProjectCard = ({ data: { imageSrc, imageAlt, field, text, title, us
     </CardContainer>
   )
 };
+
+export default ProjectCard;

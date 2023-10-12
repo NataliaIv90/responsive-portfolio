@@ -11,7 +11,7 @@ const interests = [
   { key: '6', name: 'Cooking' },
 ];
 
-export const Interests = () => {
+const Interests = () => {
   return (
     <SectionWrapper
       id='interests'
@@ -28,3 +28,5 @@ export const Interests = () => {
     </SectionWrapper>
   )
 };
+
+export default Interests;

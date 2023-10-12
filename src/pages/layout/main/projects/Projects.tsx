@@ -1,6 +1,6 @@
 import { SectionWrapper } from '../MainComponent';
 import { IProjectCardProps, ETechOptions } from '../../../../types/types';
-import { ProjectCard } from './projectCard/ProjectCard';
+import ProjectCard from './projectCard/ProjectCard';
 import { CardWrapper } from './ProjectsStyled';
 
 const projectsData: IProjectCardProps[] = [
@@ -16,7 +16,7 @@ const projectsData: IProjectCardProps[] = [
   },
 ]
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <SectionWrapper
       id='projects'
@@ -34,4 +34,6 @@ export const Projects = () => {
       </div>
     </SectionWrapper>
   )
-}
+};
+
+export default Projects;

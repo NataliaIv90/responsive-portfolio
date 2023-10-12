@@ -2,9 +2,9 @@ import { PropsWithChildren, ReactElement } from 'react';
 import { Contacts } from './conacts/Contacts';
 import { MainWrapper, StyledText, StyledTitle, SectionContainer } from './MainStyled';
 import { About } from './about/About';
-import { Interests } from './interests/Interests';
-import { Projects } from './projects/Projects';
-import { Hero } from './hero/Hero';
+import Interests from './interests/Interests';
+import Projects from './projects/Projects';
+import Hero from './hero/Hero';
 
 interface ISectionWrapper {
   title: string,
