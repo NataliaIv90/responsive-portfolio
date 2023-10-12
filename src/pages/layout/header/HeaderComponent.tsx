@@ -6,7 +6,7 @@ import { myPages } from '../../../shared/constants';
 import { StyledLink, StyledAppBar, StyledPaper } from './HeaderStyled'
 import Link from 'next/link';
 
-export const HeaderComponent = () => {
+const HeaderComponent = () => {
   const [open, setOpen] = useState(false);
   const anchorRef = useRef<HTMLButtonElement>(null);
 
@@ -114,3 +114,5 @@ export const HeaderComponent = () => {
     </header >
   )
 }
+
+export default HeaderComponent;

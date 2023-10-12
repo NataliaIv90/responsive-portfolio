@@ -1,7 +1,7 @@
 import { myPages } from "@/shared/constants"
 import { StyledDiv, StyledLink } from './FooterStyled';
 
-export const FooterComponent = () => {
+const FooterComponent = () => {
   return (
     <footer>
       <StyledDiv>
@@ -14,4 +14,6 @@ export const FooterComponent = () => {
       <StyledDiv>&copy; Natalia Ivantsova {new Date().getFullYear()}</StyledDiv>
     </footer>
   )
-}
+};
+
+export default FooterComponent;

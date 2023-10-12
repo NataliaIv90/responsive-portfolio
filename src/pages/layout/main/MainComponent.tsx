@@ -1,7 +1,7 @@
 import { PropsWithChildren, ReactElement } from 'react';
-import { Contacts } from './conacts/Contacts';
+import Contacts from './conacts/Contacts';
 import { MainWrapper, StyledText, StyledTitle, SectionContainer } from './MainStyled';
-import { About } from './about/About';
+import About from './about/About';
 import Interests from './interests/Interests';
 import Projects from './projects/Projects';
 import Hero from './hero/Hero';
@@ -25,7 +25,7 @@ export const SectionWrapper = ({
   )
 }
 
-export const MainComponent = () => {
+const MainComponent = () => {
   return (
     <MainWrapper>
       <Hero />
@@ -35,4 +35,6 @@ export const MainComponent = () => {
       <Contacts />
     </MainWrapper>
   )
-}
+};
+
+export default MainComponent;

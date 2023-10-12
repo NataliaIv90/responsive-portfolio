@@ -9,7 +9,7 @@ const linksProrps = [
   { key: 'gmail', icon: faGoogle, path: '' },
 ]
 
-export const Contacts = () => {
+const Contacts = () => {
   return (
     <SectionWrapper
       id='contacts'
@@ -25,4 +25,6 @@ export const Contacts = () => {
       </IconsContainer>
     </SectionWrapper>
   )
-}
+};
+
+export default Contacts;

@@ -2,7 +2,7 @@ import { SectionWrapper } from '../MainComponent';
 import photo from './photo.jpg';
 import { StyledImage } from './AboutStyled';
 
-export const About = () => {
+const About = () => {
   return (
     <SectionWrapper
       id='about'
@@ -23,4 +23,6 @@ export const About = () => {
       </div>
     </SectionWrapper >
   )
-}
+};
+
+export default About;
