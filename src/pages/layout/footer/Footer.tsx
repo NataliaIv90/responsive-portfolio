@@ -1,5 +1,5 @@
 import { myPages } from "@/shared/constants"
-import { StyledDiv, StyledLink } from './FooterStyled';
+import { StyledDiv, StyledLink } from './Footer.styled';
 
 const FooterComponent = () => {
   return (

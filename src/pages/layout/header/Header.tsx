@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Button, ClickAwayListener, Grow, MenuItem, MenuList, Popper } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import { myPages } from '../../../shared/constants';
-import { StyledLink, StyledAppBar, StyledPaper } from './HeaderStyled'
+import { StyledLink, StyledAppBar, StyledPaper } from './Header.styled'
 import Link from 'next/link';
 
 const HeaderComponent = () => {

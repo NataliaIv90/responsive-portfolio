@@ -1,6 +1,6 @@
 import { SectionWrapper } from '../MainComponent';
 import photo from './photo.jpg';
-import { StyledImage } from './AboutStyled';
+import { StyledImage } from './About.styled';
 
 const About = () => {
   return (

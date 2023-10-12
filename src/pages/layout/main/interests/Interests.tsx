@@ -1,6 +1,6 @@
 import { SectionWrapper } from '../MainComponent';
 import { Grid } from '@mui/material';
-import { GridItem } from './InterestsStyled';
+import { GridItem } from './Interests.styled';
 
 const interests = [
   { key: '1', name: 'Drawing & Painting' },

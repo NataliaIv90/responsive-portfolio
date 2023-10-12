@@ -10,7 +10,7 @@ import {
   StyledLinkLight,
   StyledIcon,
   StyledContainedButton
-} from './HeroStyled';
+} from './Hero.styled';
 import { faGithub, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const linksProrps = [

@@ -1,6 +1,6 @@
 import { PropsWithChildren, ReactElement } from 'react';
 import Contacts from './conacts/Contacts';
-import { MainWrapper, StyledText, StyledTitle, SectionContainer } from './MainStyled';
+import { MainWrapper, StyledText, StyledTitle, SectionContainer } from './Main.styled';
 import About from './about/About';
 import Interests from './interests/Interests';
 import Projects from './projects/Projects';
