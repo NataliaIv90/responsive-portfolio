@@ -1,6 +1,13 @@
 import { SectionWrapper } from '../MainComponent';
 import { IProjectCardProps } from '../../../../types/types';
-import { CardWrapper, StyledButton } from './Projects.styled';
+import {
+  CardWrapper, StyledButton, StyledProjectImg, StyledFielDescription,
+  StyledText,
+  StyledTitle,
+  CardFooter,
+  TechItemsContainer,
+  TechItem
+} from './Projects.styled';
 import Link from 'next/link';
 
 const projectsData: IProjectCardProps[] = [
@@ -24,7 +31,7 @@ const projectsData: IProjectCardProps[] = [
     usedTechnologies: ['Figma', 'JavaScript']
 
   },
-]
+];
 
 const Projects = () => {
   return (
@@ -36,12 +43,17 @@ const Projects = () => {
       <div>
         {projectsData.map((el, index) => (
           <CardWrapper key={index}>
-            <div><img src={el.imageSrc} alt={el.imageAlt} /></div>
-            <p>{el.title}</p>
-            <p>{el.field}</p>
-            <p>{el.text}</p>
-            <p>{el.usedTechnologies.map((techEl) => (<span key={techEl}>{techEl}</span>))}</p>
-            <Link href={el.buttonLink}><StyledButton>View code</StyledButton></Link>
+            <div><StyledProjectImg src={el.imageSrc} alt={el.imageAlt} /></div>
+            <StyledFielDescription>{el.field}</StyledFielDescription>
+            <StyledTitle>{el.title}</StyledTitle>
+            <StyledText>{el.text}</StyledText>
+            <CardFooter>
+              <TechItemsContainer>{el.usedTechnologies.map((techEl) => (
+                <TechItem key={techEl}>{techEl}</TechItem>
+              ))}
+              </TechItemsContainer>
+              <Link href={el.buttonLink}><StyledButton>View code</StyledButton></Link>
+            </CardFooter>
           </CardWrapper>
         ))}
       </div>
