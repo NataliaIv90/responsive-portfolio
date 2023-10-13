@@ -1,6 +1,6 @@
 import { StyledImage, ProjectField, StyledLink, StyledButton, CardContainer, ProjectTitle, ProjectDescription, CardFooter, TechName, IconsContainer } from './ProjectCard.styled';
 import { IProjectCardProps } from '../../../../../types/types';
-// import { techIcons } from '../../../../../shared/constants';
+
 interface IProjectCard {
   data: IProjectCardProps;
 };
@@ -20,7 +20,8 @@ export const techIcons = {
   gmail: { icon: '../../../../../assets/images/gmail.svg', name: 'Gmail' },
 }
 
-const ProjectCard = ({ data: { imageSrc, imageAlt, field, text, title, usedTechnologies, buttonLink } }: IProjectCard) => {
+const ProjectCard = ({ data }: IProjectCard) => {
+  const { imageSrc, imageAlt, field, text, title, usedTechnologies, buttonLink } = data;
 
   return (
     <CardContainer>
