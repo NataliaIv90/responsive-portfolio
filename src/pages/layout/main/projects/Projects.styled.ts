@@ -16,4 +16,3 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   color: theme.palette.text.primary,
   borderColor: theme.palette.text.primary,
 }));
-
