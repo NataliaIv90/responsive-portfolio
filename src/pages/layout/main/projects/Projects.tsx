@@ -34,13 +34,12 @@ const Projects = () => {
       title='projects'
     >
       <div>
-        {projectsData.length > 0
-          ? projectsData.map((el, index) => (
-            <CardWrapper key={index}>
-              <ProjectCard data={el} />
-            </CardWrapper>
-          ))
-          : null}
+        {projectsData.map((el, index) => (
+          <CardWrapper key={index}>
+            {el.title}
+            {/* <ProjectCard data={el} /> */}
+          </CardWrapper>
+        ))}
       </div>
     </SectionWrapper>
   )
