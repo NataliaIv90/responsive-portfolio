@@ -1,4 +1,4 @@
-import { styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
 
 export const StyledDiv = styled('div')({

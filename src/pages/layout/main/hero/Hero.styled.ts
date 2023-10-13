@@ -1,5 +1,6 @@
 import { grey } from '@mui/material/colors';
-import { styled, Button } from '@mui/material';
+import { Button } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

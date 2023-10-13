@@ -1,4 +1,5 @@
-import { styled, AppBar, Paper } from '@mui/material';
+import { AppBar, Paper } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
 
 export const StyledLink = styled('a')(({ theme }) => ({

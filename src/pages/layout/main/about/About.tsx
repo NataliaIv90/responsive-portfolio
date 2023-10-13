@@ -11,6 +11,7 @@ const About = () => {
     >
       <div>
         <StyledImage
+          priority={false}
           src={photo}
           alt='Picture of the author'
         />

@@ -1,4 +1,4 @@
-import { styled, Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
 
 export const GridItem = styled('div')(({ theme }) => ({

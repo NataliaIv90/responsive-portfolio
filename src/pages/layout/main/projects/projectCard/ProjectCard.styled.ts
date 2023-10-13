@@ -1,5 +1,5 @@
 import { grey } from '@mui/material/colors';
-import { styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import Image from 'next/image';
 import { Button } from '@mui/material';
 import Link from 'next/link';
