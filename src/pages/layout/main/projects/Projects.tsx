@@ -1,6 +1,6 @@
 import { SectionWrapper } from '../MainComponent';
-import { IProjectCardProps, ETechOptions } from '../../../../types/types';
-// import ProjectCard from './projectCard/ProjectCard';
+import { IProjectCardProps } from '../../../../types/types';
+import ProjectCard from './projectCard/ProjectCard';
 import { CardWrapper } from './Projects.styled';
 
 const projectsData: IProjectCardProps[] = [
@@ -11,7 +11,7 @@ const projectsData: IProjectCardProps[] = [
     text: 'Text',
     field: 'Fiesl',
     buttonLink: 'Link',
-    usedTechnologies: [ETechOptions.thtml, ETechOptions.tcss, ETechOptions.tjs]
+    usedTechnologies: ['HTML', 'CSS', 'JavaScript']
 
   },
   {
@@ -21,7 +21,7 @@ const projectsData: IProjectCardProps[] = [
     text: 'Text',
     field: 'Fiesl',
     buttonLink: 'Link',
-    usedTechnologies: [ETechOptions.tfigma, ETechOptions.tmui, ETechOptions.tjs]
+    usedTechnologies: ['Figma', 'JavaScript']
 
   },
 ]
@@ -37,7 +37,7 @@ const Projects = () => {
         {projectsData.map((el, index) => (
           <CardWrapper key={index}>
             {el.title}
-            {/* <ProjectCard data={el} /> */}
+            <ProjectCard data={el} />
           </CardWrapper>
         ))}
       </div>
