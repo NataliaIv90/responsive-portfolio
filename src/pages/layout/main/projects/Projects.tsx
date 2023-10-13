@@ -1,7 +1,7 @@
 import { SectionWrapper } from '../MainComponent';
 import { IProjectCardProps } from '../../../../types/types';
-import ProjectCard from './projectCard/ProjectCard';
-import { CardWrapper } from './Projects.styled';
+import { CardWrapper, StyledButton } from './Projects.styled';
+import Link from 'next/link';
 
 const projectsData: IProjectCardProps[] = [
   {
@@ -36,8 +36,12 @@ const Projects = () => {
       <div>
         {projectsData.map((el, index) => (
           <CardWrapper key={index}>
-            {el.title}
-            <ProjectCard data={el} />
+            <div><img src={el.imageSrc} alt={el.imageAlt} /></div>
+            <p>{el.title}</p>
+            <p>{el.field}</p>
+            <p>{el.text}</p>
+            <p>{el.usedTechnologies.map((techEl) => (<span key={techEl}>{techEl}</span>))}</p>
+            <Link href={el.buttonLink}><StyledButton>View code</StyledButton></Link>
           </CardWrapper>
         ))}
       </div>
