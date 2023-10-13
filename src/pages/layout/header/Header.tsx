@@ -3,8 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Button, ClickAwayListener, Grow, MenuItem, MenuList, Popper } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import { myPages } from '../../../shared/constants';
-import { StyledLink, StyledAppBar, StyledPaper } from './Header.styled'
-import Link from 'next/link';
+import { StyledLink, StyledAppBar, StyledPaper, StyledNavigationButtonLink } from './Header.styled';
 
 const HeaderComponent = () => {
   const [open, setOpen] = useState(false);
@@ -96,7 +95,7 @@ const HeaderComponent = () => {
                       >
                         {myPages.map((page) => (
                           <MenuItem key={page.id} onClick={handleClose}>
-                            <Link href={`/#${page.id}`}>{page.text}</Link>
+                            <StyledNavigationButtonLink href={`/#${page.id}`}>{page.text}</StyledNavigationButtonLink>
                           </MenuItem>
                         ))}
                       </MenuList>

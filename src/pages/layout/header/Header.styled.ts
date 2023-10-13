@@ -10,6 +10,10 @@ export const StyledLink = styled('a')(({ theme }) => ({
   color: theme.palette.text.primary,
 }));
 
+export const StyledNavigationButtonLink = styled('a')(({ theme }) => ({
+  color: theme.palette.text.primary,
+}));
+
 export const StyledAppBar = styled(AppBar)({
   '&.MuiAppBar-root': {
     background: grey[400],
