@@ -6,18 +6,18 @@ interface IProjectCard {
 };
 
 export const techIcons = {
-  html: { icon: '../../../../../assets/images/HTML5.svg', name: 'HTML' },
-  css: { icon: '../../../../../assets/images/css.png', name: 'CSS' },
-  js: { icon: '../../../../../assets/images/js.svg', name: 'JavaScript' },
-  react: { icon: '../../../../../assets/images/react-1.svg', name: 'React' },
-  redux: { icon: '../../../../../assets/images/redux.svg', name: 'Redux' },
-  figma: { icon: '../../../../../assets/images/figma.svg', name: 'Figma' },
-  reactHookForm: { icon: '../../../../../assets/images/rhf.svg', name: 'React Hook Form' },
-  ts: { icon: '../../../../../assets/images/typescript.svg', name: 'TypeScript' },
-  mui: { icon: '../../../../../assets/images/mui.png', name: 'MUI' },
-  github: { icon: '../../../../../assets/images/github.png', name: 'GitHub' },
-  linkedinIcon: { icon: '../../../../../assets/images/linkedin.svg', name: 'LinkedIn' },
-  gmail: { icon: '../../../../../assets/images/gmail.svg', name: 'Gmail' },
+  html: { iconSrc: '../../../../../assets/images/HTML5.svg', name: 'HTML' },
+  css: { iconSrc: '../../../../../assets/images/css.png', name: 'CSS' },
+  js: { iconSrc: '../../../../../assets/images/js.svg', name: 'JavaScript' },
+  react: { iconSrc: '../../../../../assets/images/react-1.svg', name: 'React' },
+  redux: { iconSrc: '../../../../../assets/images/redux.svg', name: 'Redux' },
+  figma: { iconSrc: '../../../../../assets/images/figma.svg', name: 'Figma' },
+  reactHookForm: { iconSrc: '../../../../../assets/images/rhf.svg', name: 'React Hook Form' },
+  ts: { iconSrc: '../../../../../assets/images/typescript.svg', name: 'TypeScript' },
+  mui: { iconSrc: '../../../../../assets/images/mui.png', name: 'MUI' },
+  github: { iconSrc: '../../../../../assets/images/github.png', name: 'GitHub' },
+  linkediniconSrc: { iconSrc: '../../../../../assets/images/linkedin.svg', name: 'LinkedIn' },
+  gmail: { iconSrc: '../../../../../assets/images/gmail.svg', name: 'Gmail' },
 }
 
 const ProjectCard = ({ data }: IProjectCard) => {

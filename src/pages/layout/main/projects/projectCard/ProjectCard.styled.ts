@@ -1,6 +1,5 @@
 import { grey } from '@mui/material/colors';
 import { styled } from '@mui/material/styles';
-import Image from 'next/image';
 import { Button } from '@mui/material';
 import Link from 'next/link';
 
@@ -40,7 +39,7 @@ export const IconsContainer = styled('div')({
   alignItems: 'center',
 });
 
-export const StyledButton = styled(Button)(({ theme }) => ({
+export const StyledButton = styled(Button)({
   background: grey[500],
   color: 'white',
   padding: '10px 12px',
@@ -48,7 +47,7 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   fontWeight: 700,
   textTransform: 'uppercase',
   borderRadius: '74px',
-}));
+});
 
 export const StyledLink = styled(Link)(({ theme }) => ({
   color: theme.palette.text.primary,
