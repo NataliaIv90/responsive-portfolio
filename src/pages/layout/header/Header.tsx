@@ -96,7 +96,7 @@ const HeaderComponent = () => {
                       >
                         {myPages.map((page) => (
                           <MenuItem key={page.id} onClick={handleClose}>
-                            <Link href={`#${page.id}`}>{page.text}</Link>
+                            <Link href={`/#${page.id}`}>{page.text}</Link>
                           </MenuItem>
                         ))}
                       </MenuList>

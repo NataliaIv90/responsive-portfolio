@@ -7,7 +7,7 @@ const FooterComponent = () => {
       <StyledDiv>
         {myPages.map((el) => {
           if (el.id !== 'interests') {
-            return <StyledLink href={`#${el.id}`} key={el.id}>{el.text}</StyledLink>
+            return <StyledLink href={`/#${el.id}`} key={el.id}>{el.text}</StyledLink>
           }
         })}
       </StyledDiv>
