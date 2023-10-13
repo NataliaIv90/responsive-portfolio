@@ -1,13 +1,13 @@
 export enum ETechOptions {
-  html = 'html',
-  css = 'css',
-  js = 'js',
-  react = 'react',
-  redux = 'redux',
-  figma = 'figma',
-  reactHookForm = 'reactHookForm',
-  ts = 'ts',
-  mui = 'mui'
+  thtml = 'html',
+  tcss = 'css',
+  tjs = 'js',
+  treact = 'react',
+  tredux = 'redux',
+  tfigma = 'figma',
+  treactHookForm = 'reactHookForm',
+  tts = 'ts',
+  tmui = 'mui'
 };
 
 export interface IProjectCardProps {

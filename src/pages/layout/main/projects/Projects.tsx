@@ -11,7 +11,7 @@ const projectsData: IProjectCardProps[] = [
     text: 'Text',
     field: 'Fiesl',
     buttonLink: 'Link',
-    usedTechnologies: [ETechOptions.html, ETechOptions.css, ETechOptions.js]
+    usedTechnologies: [ETechOptions.thtml, ETechOptions.tcss, ETechOptions.tjs]
 
   },
 ]
