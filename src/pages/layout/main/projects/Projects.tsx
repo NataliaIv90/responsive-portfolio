@@ -1,6 +1,6 @@
 import { SectionWrapper } from '../MainComponent';
 import { IProjectCardProps, ETechOptions } from '../../../../types/types';
-import ProjectCard from './projectCard/ProjectCard';
+// import ProjectCard from './projectCard/ProjectCard';
 import { CardWrapper } from './Projects.styled';
 
 const projectsData: IProjectCardProps[] = [
