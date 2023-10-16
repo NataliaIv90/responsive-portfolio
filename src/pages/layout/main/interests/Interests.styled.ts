@@ -12,5 +12,19 @@ export const GridItem = styled('div')(({ theme }) => ({
   fontSize: '14px',
   fontWeight: 700,
   textTransform: 'uppercase',
-  background: grey[400]
+  background: grey[400],
+  [theme.breakpoints.up('md')]: {
+    height: '120px',
+    fontSize: '16px',
+    padding: '0 35px',
+  },
+  [theme.breakpoints.up('lg')]: {
+    height: '166px',
+    fontSize: '20px',
+    padding: '0 50px',
+  },
+  [theme.breakpoints.up('xl')]: {
+    height: '202px',
+    padding: '0 56px',
+  },
 }));

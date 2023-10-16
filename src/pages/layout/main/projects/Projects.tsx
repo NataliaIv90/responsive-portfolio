@@ -6,7 +6,9 @@ import {
   StyledTitle,
   CardFooter,
   TechItemsContainer,
-  TechItem
+  TechItem,
+  CardImageWrapper,
+  CardContentContainer
 } from './Projects.styled';
 import Link from 'next/link';
 
@@ -43,17 +45,25 @@ const Projects = () => {
       <div>
         {projectsData.map((el, index) => (
           <CardWrapper key={index}>
-            <div><StyledProjectImg src={el.imageSrc} alt={el.imageAlt} /></div>
-            <StyledFielDescription>{el.field}</StyledFielDescription>
-            <StyledTitle>{el.title}</StyledTitle>
-            <StyledText>{el.text}</StyledText>
-            <CardFooter>
-              <TechItemsContainer>{el.usedTechnologies.map((techEl) => (
-                <TechItem key={techEl}>{techEl}</TechItem>
-              ))}
-              </TechItemsContainer>
-              <Link href={el.buttonLink}><StyledButton>View code</StyledButton></Link>
-            </CardFooter>
+            <CardImageWrapper>
+              <StyledProjectImg src={el.imageSrc} alt={el.imageAlt} />
+            </CardImageWrapper>
+            <CardContentContainer>
+              <div>
+                <StyledFielDescription>{el.field}</StyledFielDescription>
+                <StyledTitle>{el.title}</StyledTitle>
+                <StyledText>{el.text}</StyledText>
+              </div>
+              <CardFooter>
+                <TechItemsContainer>{el.usedTechnologies.map((techEl) => (
+                  <TechItem key={techEl}>{techEl}</TechItem>
+                ))}
+                </TechItemsContainer>
+                <Link href={el.buttonLink}>
+                  <StyledButton>View code</StyledButton>
+                </Link>
+              </CardFooter>
+            </CardContentContainer>
           </CardWrapper>
         ))}
       </div>

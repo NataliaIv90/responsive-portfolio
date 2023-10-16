@@ -20,7 +20,7 @@ const Interests = () => {
     >
       <Grid container spacing={2} my={2}>
         {interests.map((el) => (
-          <Grid item xs={6} key={el.key}>
+          <Grid item xs={6} md={4} key={el.key}>
             <GridItem><span>{el.name}</span></GridItem>
           </Grid>
         ))}

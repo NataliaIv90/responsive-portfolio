@@ -23,12 +23,15 @@ const Hero = () => {
   return (
     <HeroWrapper>
       <StyledGreeting>hello!</StyledGreeting>
-      <StyledTitle>I&apos;m Natalia, a coding newbie with big dreams and small syntax errors. I&apos;m here to turn &apos;I have no idea what I&apos;m doing&apos; into &apos;I got this!&apos;</StyledTitle>
+      <StyledTitle>
+        <p>I&apos;m Natalia, a coding newbie with big dreams and small syntax errors. I&apos;m here to turn &apos;I have no idea what I&apos;m doing&apos; into &apos;I got this!&apos;</p>
+        <p>Welcome to my portfolio.</p>
+      </StyledTitle>
       <HeroFooter>
         <IconsContainer>
           {linksProrps.map((el) => (
             <StyledLinkLight key={el.key} href={el.path}>
-              <StyledIcon icon={el.icon} size="2x" />
+              <StyledIcon icon={el.icon} />
             </StyledLinkLight>
           ))}
         </IconsContainer>
