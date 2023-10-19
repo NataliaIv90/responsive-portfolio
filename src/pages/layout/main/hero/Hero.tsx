@@ -12,11 +12,12 @@ import {
   StyledContainedButton
 } from './Hero.styled';
 import { faGithub, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { links } from '@/shared/constants';
 
 const linksProrps = [
-  { key: 'git', icon: faGithub, path: '' },
-  { key: 'linkedin', icon: faLinkedin, path: '' },
-  { key: 'gmail', icon: faGoogle, path: '' },
+  { key: 'git', icon: faGithub, path: links.github },
+  { key: 'linkedin', icon: faLinkedin, path: links.linkedIn },
+  { key: 'gmail', icon: faGoogle, path: links.gmail },
 ]
 
 const Hero = () => {
