@@ -2,11 +2,12 @@ import { faGithub, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconsContainer, StyledLink } from './Contacts.styled';
 import { SectionWrapper } from '../MainComponent';
+import { links } from '@/shared/constants';
 
 const linksProrps = [
-  { key: 'git', icon: faGithub, path: '' },
-  { key: 'linkedin', icon: faLinkedin, path: '' },
-  { key: 'gmail', icon: faGoogle, path: '' },
+  { key: 'git', icon: faGithub, path: links.github },
+  { key: 'linkedin', icon: faLinkedin, path: links.linkedIn },
+  { key: 'gmail', icon: faGoogle, path: links.gmail },
 ]
 
 const Contacts = () => {
@@ -18,7 +19,7 @@ const Contacts = () => {
     >
       <IconsContainer>
         {linksProrps.map((el) => (
-          <StyledLink key={el.key} href={el.path}>
+          <StyledLink key={el.key} href={el.path} target='_blank'>
             <FontAwesomeIcon icon={el.icon} size="2x" />
           </StyledLink>
         ))}

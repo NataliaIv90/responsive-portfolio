@@ -30,7 +30,7 @@ const Hero = () => {
       <HeroFooter>
         <IconsContainer>
           {linksProrps.map((el) => (
-            <StyledLinkLight key={el.key} href={el.path}>
+            <StyledLinkLight key={el.key} href={el.path} target='_blank'>
               <StyledIcon icon={el.icon} />
             </StyledLinkLight>
           ))}
