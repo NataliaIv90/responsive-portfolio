@@ -85,11 +85,11 @@ export const StyledContainedButton = styled(StyledHeroButton)(({ theme }) => ({
   }
 }));
 
-export const StyledLinkDark = styled(Link)({
+export const StyledLinkDark = styled('a')({
   color: grey[900],
 });
 
-export const StyledLinkLight = styled(Link)({
+export const StyledLinkLight = styled('a')({
   color: grey[100],
 });
 
